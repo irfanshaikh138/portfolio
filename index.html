@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irfan Shaikh | Senior Full Stack & Distributed Systems Engineer</title>
+  <meta name="description" content="Portfolio of Irfan Shaikh - Senior Full Stack Engineer with 7+ years of experience in Node.js, TypeScript, React, GraphQL Federation, PostgreSQL RLS, and Distributed Systems.">
+  <meta name="keywords" content="Irfan Shaikh, Senior Software Engineer, Full Stack Engineer, Node.js, TypeScript, React, GraphQL Federation, PostgreSQL, Pune, India">
+  <meta name="author" content="Irfan Shaikh">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Glow Accents -->
+  <div class="bg-mesh" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span class="logo-text">irfan<span class="text-accent">.shaikh</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#architecture" class="nav-link">Architecture</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="https://www.linkedin.com/in/irfan-shaikh-b85118169/" target="_blank" rel="noopener noreferrer" class="nav-btn-linkedin">
+          <span>LinkedIn</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+        </a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="badge-dot"></span>
+            <span>Available for Senior Software Engineer (L5) Opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Irfan Shaikh</span>
+            <br>
+            <span class="hero-subtitle">Architecting Scalable Systems & High-Velocity Platforms</span>
+          </h1>
+
+          <p class="hero-description">
+            Senior Full Stack Engineer with <strong>7+ years of experience</strong> building enterprise-grade multi-tenant systems using <strong>Node.js, TypeScript, React, GraphQL Federation,</strong> and <strong>PostgreSQL</strong>. Specialized in microservices, event-driven pipelines with Kafka CDC, and high-performance frontend architectures.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Key Projects</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#architecture" class="btn btn-secondary">
+              <span>System Architecture</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <span>Get In Touch</span>
+            </a>
+          </div>
+
+          <div class="hero-tags">
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">GraphQL Federation</span>
+            <span class="tech-tag">PostgreSQL (RLS)</span>
+            <span class="tech-tag">Apache Kafka</span>
+            <span class="tech-tag">Docker / AWS</span>
+          </div>
+        </div>
+
+        <!-- Hero Terminal Card -->
+        <div class="hero-card-wrapper">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-title">irfan-shaikh-profile.ts</div>
+            </div>
+            <div class="terminal-body font-mono">
+              <p class="code-line"><span class="code-keyword">const</span> <span class="code-var">engineer</span>: <span class="code-type">SeniorFullStackEngineer</span> = {</p>
+              <p class="code-line indent-1"><span class="code-prop">name</span>: <span class="code-string">'Irfan Shaikh'</span>,</p>
+              <p class="code-line indent-1"><span class="code-prop">currentRole</span>: <span class="code-string">'Senior Software Engineer III @ HCL Software'</span>,</p>
+              <p class="code-line indent-1"><span class="code-prop">location</span>: <span class="code-string">'Pune, Maharashtra, India'</span>,</p>
+              <p class="code-line indent-1"><span class="code-prop">experience</span>: <span class="code-string">'7+ Years (Enterprise & Scale)'</span>,</p>
+              <p class="code-line indent-1"><span class="code-prop">coreFocus</span>: [</p>
+              <p class="code-line indent-2"><span class="code-string">'GraphQL Federation & Microservices'</span>,</p>
+              <p class="code-line indent-2"><span class="code-string">'PostgreSQL Multi-Tenancy (Row-Level Security)'</span>,</p>
+              <p class="code-line indent-2"><span class="code-string">'Event-Driven Sync (Kafka & Debezium CDC)'</span>,</p>
+              <p class="code-line indent-2"><span class="code-string">'High-Performance React & Design Systems'</span></p>
+              <p class="code-line indent-1">],</p>
+              <p class="code-line indent-1"><span class="code-prop">impactHighlights</span>: {</p>
+              <p class="code-line indent-2"><span class="code-prop">queryLatency</span>: <span class="code-string">'500ms → 80ms (84% reduction)'</span>,</p>
+              <p class="code-line indent-2"><span class="code-prop">apiResponseTime</span>: <span class="code-string">'40% faster via Federation'</span>,</p>
+              <p class="code-line indent-2"><span class="code-prop">lighthouseScore</span>: <span class="code-string">'65 → 92 on enterprise React apps'</span>,</p>
+              <p class="code-line indent-2"><span class="code-prop">activeTenantsSecured</span>: <span class="code-string">'100+ Enterprise clients'</span></p>
+              <p class="code-line indent-1">},</p>
+              <p class="code-line indent-1"><span class="code-prop">openFor</span>: <span class="code-string">'Staff / Senior SWE / L5 Opportunities'</span></p>
+              <p class="code-line">};</p>
+              <p class="code-line text-comment">// 🚀 Ready to solve planetary-scale problems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Metrics Ribbon -->
+      <div class="metrics-ribbon">
+        <div class="container metrics-grid">
+          <div class="metric-box">
+            <div class="metric-number">7+</div>
+            <div class="metric-label">Years Experience</div>
+            <div class="metric-sub">Enterprise Engineering</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-number">50K+</div>
+            <div class="metric-label">Active Users Served</div>
+            <div class="metric-sub">Across React & Node Platforms</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-number">84%</div>
+            <div class="metric-label">DB Latency Cut</div>
+            <div class="metric-sub">500ms down to 80ms</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-number">20+</div>
+            <div class="metric-label">PBCs Integrated</div>
+            <div class="metric-sub">Via GraphQL Federation</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-number">99.9%</div>
+            <div class="metric-label">Uptime Maintained</div>
+            <div class="metric-sub">Docker on AWS ECS</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">ENGINEERING PROFILE</span>
+          <h2 class="section-title">About Irfan Shaikh</h2>
+          <p class="section-desc">Building resilient enterprise foundations where developer experience meets mission-critical scalability.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card main-about">
+            <div class="about-icon">⚡</div>
+            <h3>Senior Full Stack & Systems Engineer</h3>
+            <p>
+              I am a Senior Software Engineer based in <strong>Pune, India</strong> with a career grounded in taking complex business workflows and transforming them into elegant, maintainable distributed systems.
+            </p>
+            <p>
+              Currently at <strong>HCL Software</strong>, I lead the technical implementation of Inventory and Promotion Packaged Business Capabilities (PBCs) for <em>HCL Commerce Plus</em>, integrating multi-tenant commerce services using <strong>GraphQL Federation, PostGraphile v5, and PostgreSQL Row-Level Security (RLS)</strong>.
+            </p>
+            <p>
+              Prior to HCL Software, I spent over 7 years at <strong>Encora Inc. (formerly Excellarate)</strong>, growing from Software Engineer to Senior Software Engineer. During this tenure, I architected scalable NestJS/Node.js backends, led enterprise React frontends serving 50K+ users, created reusable component systems that reduced development cycles by 40%, and managed end-to-end containerized deployments on AWS.
+            </p>
+            <div class="about-bullets">
+              <div class="bullet-item">
+                <span class="bullet-icon">🛡️</span>
+                <div>
+                  <strong>Multi-Tenant Data Security:</strong> Deep expertise enforcing tenant boundaries using PostgreSQL Row-Level Security (RLS) across 100+ enterprise tenants.
+                </div>
+              </div>
+              <div class="bullet-item">
+                <span class="bullet-icon">🔄</span>
+                <div>
+                  <strong>Event-Driven Data Pipelines:</strong> Experience with Debezium CDC and Apache Kafka to sync state changes reliably across decoupled microservices.
+                </div>
+              </div>
+              <div class="bullet-item">
+                <span class="bullet-icon">🚀</span>
+                <div>
+                  <strong>Performance Obsession:</strong> Track record of reducing database query latencies by 84% and elevating frontend Lighthouse scores from 65 to 92.
+                </div>
+              </div>
+              <div class="bullet-item">
+                <span class="bullet-icon">👥</span>
+                <div>
+                  <strong>Mentorship & Standards:</strong> Mentored junior engineers, established rigorous code review standards, and championed type safety across full-stack repositories.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card education-card">
+            <h3>Education & Credentials</h3>
+            
+            <div class="edu-item">
+              <div class="edu-icon">🎓</div>
+              <div class="edu-content">
+                <span class="edu-year">2015 – 2018</span>
+                <h4 class="edu-degree">Bachelor of Engineering (B.E.) in Information Technology</h4>
+                <p class="edu-school">Swami Ramanand Teerth Marathwada University (SRTMUN), Nanded</p>
+                <span class="edu-badge">Graduated with Distinction</span>
+              </div>
+            </div>
+
+            <div class="edu-item">
+              <div class="edu-icon">📜</div>
+              <div class="edu-content">
+                <span class="edu-year">2013 – 2015</span>
+                <h4 class="edu-degree">Diploma in Computer Engineering</h4>
+                <p class="edu-school">Puranmal Lahoti Government Polytechnic, Latur</p>
+              </div>
+            </div>
+
+            <div class="quick-contact-box">
+              <h4>Direct Contact</h4>
+              <p>Looking for a Senior Software Engineer (L5) who can own features end-to-end? Let's connect.</p>
+              <div class="contact-links">
+                <a href="mailto:irfanshkh52@gmail.com" class="contact-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <span>irfanshkh52@gmail.com</span>
+                </a>
+                <a href="tel:+918999162474" class="contact-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <span>+91-8999162474</span>
+                </a>
+                <a href="https://www.linkedin.com/in/irfan-shaikh-b85118169/" target="_blank" rel="noopener noreferrer" class="contact-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  <span>LinkedIn Profile</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS MATRIX -->
+    <section class="section bg-surface" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">TECHNICAL CAPABILITIES</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-desc">Extensive hands-on toolchain built over 7+ years of building production-grade enterprise software.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Backend & Systems -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="cat-icon green">⚙️</div>
+              <h3>Backend & Microservices</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-item highlighted">Node.js</span>
+              <span class="skill-item highlighted">TypeScript</span>
+              <span class="skill-item highlighted">GraphQL & Apollo</span>
+              <span class="skill-item highlighted">PostGraphile v5</span>
+              <span class="skill-item">NestJS</span>
+              <span class="skill-item">Express.js</span>
+              <span class="skill-item">Fastify</span>
+              <span class="skill-item">RESTful APIs</span>
+              <span class="skill-item">JWT / OAuth2</span>
+              <span class="skill-item">Graphile Worker</span>
+            </div>
+          </div>
+
+          <!-- Databases & Storage -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="cat-icon blue">🗄️</div>
+              <h3>Databases & Storage</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-item highlighted">PostgreSQL (RLS)</span>
+              <span class="skill-item highlighted">Database Indexing</span>
+              <span class="skill-item highlighted">Query Optimization</span>
+              <span class="skill-item">Redis (Caching)</span>
+              <span class="skill-item">MongoDB</span>
+              <span class="skill-item">pgTAP Testing</span>
+              <span class="skill-item">Database Migrations</span>
+              <span class="skill-item">AWS S3 Storage</span>
+            </div>
+          </div>
+
+          <!-- Frontend & UI -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="cat-icon purple">🎨</div>
+              <h3>Frontend & UI Engineering</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-item highlighted">React</span>
+              <span class="skill-item highlighted">Next.js</span>
+              <span class="skill-item highlighted">TypeScript UI</span>
+              <span class="skill-item">Redux / Toolkit</span>
+              <span class="skill-item">Tailwind CSS</span>
+              <span class="skill-item">Material-UI</span>
+              <span class="skill-item">Vite & Webpack</span>
+              <span class="skill-item">Component Libraries</span>
+              <span class="skill-item">Lighthouse Optimization</span>
+              <span class="skill-item">HTML5 / Modern CSS</span>
+            </div>
+          </div>
+
+          <!-- Distributed Architecture -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="cat-icon yellow">🏗️</div>
+              <h3>Distributed Architecture</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-item highlighted">GraphQL Federation</span>
+              <span class="skill-item highlighted">Multi-Tenant Isolation</span>
+              <span class="skill-item highlighted">Apache Kafka</span>
+              <span class="skill-item highlighted">Debezium CDC</span>
+              <span class="skill-item">Event-Driven Design</span>
+              <span class="skill-item">Microservices</span>
+              <span class="skill-item">Row-Level Security</span>
+              <span class="skill-item">Async Task Queues</span>
+              <span class="skill-item">High-Availability</span>
+            </div>
+          </div>
+
+          <!-- Cloud & DevOps -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="cat-icon cyan">☁️</div>
+              <h3>Cloud & DevOps</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-item highlighted">Docker</span>
+              <span class="skill-item highlighted">AWS ECS</span>
+              <span class="skill-item">AWS EC2</span>
+              <span class="skill-item">Kubernetes Basics</span>
+              <span class="skill-item">GitHub Actions</span>
+              <span class="skill-item">Azure DevOps</span>
+              <span class="skill-item">CI/CD Pipelines</span>
+              <span class="skill-item">Auto-Scaling</span>
+            </div>
+          </div>
+
+          <!-- Observability & Testing -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="cat-icon red">🔍</div>
+              <h3>Observability & Testing</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-item highlighted">OpenTelemetry Tracing</span>
+              <span class="skill-item highlighted">Pino Structured Logging</span>
+              <span class="skill-item">Vitest</span>
+              <span class="skill-item">Jest</span>
+              <span class="skill-item">Playwright</span>
+              <span class="skill-item">Integration Testing</span>
+              <span class="skill-item">APM & Health Checks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHITECTURE SPOTLIGHT (INTERACTIVE SHOWCASE) -->
+    <section class="section" id="architecture">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">SYSTEM DESIGN SPOTLIGHT</span>
+          <h2 class="section-title">Architectural Engineering in Practice</h2>
+          <p class="section-desc">Interactive breakdown of real enterprise architectures I've designed and scaled.</p>
+        </div>
+
+        <!-- Architecture Tabs -->
+        <div class="arch-tabs">
+          <button class="arch-tab-btn active" data-tab="federation">
+            <span class="tab-icon">🌐</span>
+            <span>GraphQL Federation & PBCs</span>
+          </button>
+          <button class="arch-tab-btn" data-tab="rls">
+            <span class="tab-icon">🛡️</span>
+            <span>Multi-Tenant RLS & CDC</span>
+          </button>
+          <button class="arch-tab-btn" data-tab="performance">
+            <span class="tab-icon">⚡</span>
+            <span>Query & Render Optimization</span>
+          </button>
+        </div>
+
+        <!-- Tab 1: GraphQL Federation -->
+        <div class="arch-panel active" id="panel-federation">
+          <div class="arch-card">
+            <div class="arch-info">
+              <h3>GraphQL Federation Gateway Architecture</h3>
+              <p>
+                In HCL Commerce Plus, enterprise customers require unified access to modular Packaged Business Capabilities (PBCs). I architected the Inventory & Promotion microservice subgraphs using PostGraphile v5 and Apollo Federation.
+              </p>
+              <ul class="arch-highlights">
+                <li><strong>Unified Schema:</strong> Seamlessly stitched schemas across 20+ PBCs without monolithic couplings.</li>
+                <li><strong>Sub-second Resolvers:</strong> PostGraphile compiles GraphQL queries directly into single optimized SQL queries, preventing N+1 query problems.</li>
+                <li><strong>40% Latency Reduction:</strong> Unified gateway reduced mobile and web client round-trips from multiple REST endpoints down to a single federated query.</li>
+              </ul>
+            </div>
+            <div class="arch-diagram">
+              <div class="diagram-box">
+                <div class="diag-node client-node">
+                  <span class="node-title">Clients (Web / Mobile / B2B)</span>
+                  <span class="node-sub">React / Native / Third-Party</span>
+                </div>
+                <div class="diag-arrow">⬇ Single Unified GraphQL Query</div>
+                <div class="diag-node gateway-node">
+                  <span class="node-badge">Apollo Federation Gateway</span>
+                  <span class="node-desc">Query Planning & Subgraph Routing</span>
+                </div>
+                <div class="diag-split">
+                  <div class="sub-col">
+                    <div class="diag-node micro-node active-node">
+                      <span class="badge-sub">Irfan's Service</span>
+                      <strong>Inventory PBC</strong>
+                      <small>PostGraphile v5 + PG RLS</small>
+                    </div>
+                  </div>
+                  <div class="sub-col">
+                    <div class="diag-node micro-node active-node">
+                      <span class="badge-sub">Irfan's Service</span>
+                      <strong>Promotion PBC</strong>
+                      <small>Rule Engine + Graphile Worker</small>
+                    </div>
+                  </div>
+                  <div class="sub-col">
+                    <div class="diag-node micro-node">
+                      <strong>Catalog & Order PBCs</strong>
+                      <small>Microservices</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Multi-Tenant RLS & CDC -->
+        <div class="arch-panel" id="panel-rls">
+          <div class="arch-card">
+            <div class="arch-info">
+              <h3>Multi-Tenant Isolation with PostgreSQL RLS & Debezium CDC</h3>
+              <p>
+                Multi-tenant commerce requires strict data segregation so tenant A can never inspect tenant B's stock or pricing, coupled with real-time cross-service synchronization.
+              </p>
+              <ul class="arch-highlights">
+                <li><strong>Zero Data Leakage:</strong> Enforced tenant isolation at the PostgreSQL database engine level using Row-Level Security (RLS) policies based on session claims.</li>
+                <li><strong>Debezium CDC Pipeline:</strong> Captures PostgreSQL Write-Ahead Log (WAL) changes asynchronously and pushes event streams to Kafka topics.</li>
+                <li><strong>Reliable Cross-Service State:</strong> Downstream analytics, notifications, and catalog services consume Kafka events without blocking the transactional database.</li>
+              </ul>
+            </div>
+            <div class="arch-diagram">
+              <div class="diagram-box">
+                <div class="diag-node app-node">
+                  <span class="node-title">Application Layer (Session Context)</span>
+                  <span class="node-sub">SET LOCAL app.current_tenant_id = 'tenant_xyz'</span>
+                </div>
+                <div class="diag-arrow">⬇ Authenticated Transaction</div>
+                <div class="diag-node db-node">
+                  <span class="node-badge">PostgreSQL with Row-Level Security (RLS)</span>
+                  <span class="node-desc">Automatic row filtering: tenant_id = current_setting(...)</span>
+                </div>
+                <div class="diag-arrow">⬇ WAL Stream (Zero Application Overhead)</div>
+                <div class="diag-split">
+                  <div class="sub-col">
+                    <div class="diag-node cdc-node">
+                      <strong>Debezium CDC</strong>
+                      <small>Change Data Capture</small>
+                    </div>
+                  </div>
+                  <div class="sub-col">
+                    <div class="diag-node kafka-node">
+                      <strong>Apache Kafka</strong>
+                      <small>Event Bus & Topics</small>
+                    </div>
+                  </div>
+                  <div class="sub-col">
+                    <div class="diag-node worker-node">
+                      <strong>Graphile Worker</strong>
+                      <small>Async Calculation Jobs</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Performance -->
+        <div class="arch-panel" id="panel-performance">
+          <div class="arch-card">
+            <div class="arch-info">
+              <h3>End-to-End Performance Engineering</h3>
+              <p>
+                From raw database queries to browser render pipelines, performance is an engineering discipline I prioritize across the entire stack.
+              </p>
+              <ul class="arch-highlights">
+                <li><strong>Database Optimization (500ms → 80ms):</strong> Identified slow sequential scans using EXPLAIN ANALYZE, added composite B-tree indexes, and optimized query plans for critical search endpoints.</li>
+                <li><strong>React Frontend Optimization (Lighthouse 65 → 92):</strong> Implemented React.memo, useMemo/useCallback boundaries, route-based code splitting with React.lazy, and image lazy loading.</li>
+                <li><strong>Distributed Observability:</strong> Integrated OpenTelemetry spans and Pino structured logging to trace latency bottlenecks across microservice boundaries.</li>
+              </ul>
+            </div>
+            <div class="arch-diagram">
+              <div class="perf-stats-display">
+                <div class="perf-card">
+                  <div class="perf-metric">500ms → 80ms</div>
+                  <div class="perf-title">Database Query Latency</div>
+                  <div class="perf-bar"><div class="bar-fill green" style="width: 84%">84% Faster</div></div>
+                </div>
+                <div class="perf-card">
+                  <div class="perf-metric">65 → 92</div>
+                  <div class="perf-title">Lighthouse Performance Score</div>
+                  <div class="perf-bar"><div class="bar-fill blue" style="width: 92%">92 / 100</div></div>
+                </div>
+                <div class="perf-card">
+                  <div class="perf-metric">2 hrs → 20 min</div>
+                  <div class="perf-title">CI/CD Deployment Cycle</div>
+                  <div class="perf-bar"><div class="bar-fill purple" style="width: 83%">83% Faster</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK EXPERIENCE TIMELINE -->
+    <section class="section bg-surface" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">CAREER TRACK RECORD</span>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-desc">7+ years of continuous growth across high-impact enterprise software engineering.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Role 1: HCL Software -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-title-area">
+                <span class="company-badge hcl">Current Role</span>
+                <h3 class="role-title">Senior Software Engineer III</h3>
+                <h4 class="company-name">HCL Software · Pune, India</h4>
+              </div>
+              <span class="timeline-date font-mono">Feb 2026 – Present</span>
+            </div>
+            <p class="timeline-lead">
+              Developing Inventory and Promotion microservices for <strong>HCL Commerce Plus</strong>, a high-volume multi-tenant e-commerce platform serving global enterprises.
+            </p>
+            <ul class="timeline-duties">
+              <li>Architecting and developing Inventory & Promotion microservices using <strong>GraphQL Federation</strong> and <strong>PostGraphile v5</strong>, integrating seamlessly with 20+ Packaged Business Capabilities (PBCs).</li>
+              <li>Implemented <strong>PostgreSQL Row-Level Security (RLS)</strong> for multi-tenant isolation, ensuring zero data contamination across 100+ enterprise customers.</li>
+              <li>Engineered an event-driven data synchronization pipeline utilizing <strong>Debezium Change Data Capture (CDC)</strong> and <strong>Apache Kafka</strong> for cross-service eventual consistency.</li>
+              <li>Built reliable asynchronous background processing workflows with <strong>Graphile Worker</strong> to manage inventory calculations and promotion rule evaluations.</li>
+              <li>Integrated <strong>OpenTelemetry distributed tracing</strong> and <strong>Pino structured logging</strong> for comprehensive observability and production health monitoring.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>TypeScript</span><span>PostGraphile v5</span><span>GraphQL Federation</span><span>PostgreSQL (RLS)</span><span>Kafka</span><span>Debezium CDC</span><span>OpenTelemetry</span><span>Graphile Worker</span>
+            </div>
+          </div>
+
+          <!-- Role 2: Encora Senior Software Engineer -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-title-area">
+                <span class="company-badge encora">Promotion</span>
+                <h3 class="role-title">Senior Software Engineer</h3>
+                <h4 class="company-name">Encora Inc. · Pune, India</h4>
+              </div>
+              <span class="timeline-date font-mono">Jul 2021 – Feb 2026</span>
+            </div>
+            <p class="timeline-lead">
+              Led full-stack architecture and feature delivery for enterprise applications serving over 50,000 active users.
+            </p>
+            <ul class="timeline-duties">
+              <li>Architected and implemented modular backend microservices using <strong>Node.js</strong> and <strong>NestJS</strong> with clean architecture, reducing deployment cycles by 35%.</li>
+              <li>Led frontend engineering of enterprise React applications serving <strong>50K+ users</strong>, authoring a reusable component library (50+ components) that reduced team development time by 40%.</li>
+              <li>Diagnosed and optimized React render cycles using memoization, virtual lists, and dynamic code splitting, elevating Lighthouse performance scores from <strong>65 to 92</strong>.</li>
+              <li>Containerized full-stack applications with <strong>Docker</strong> and managed deployments to <strong>AWS ECS</strong> with auto-scaling policies, sustaining <strong>99.9% uptime</strong> during traffic spikes.</li>
+              <li>Mentored 4 junior and mid-level engineers via rigorous code reviews and pair programming, elevating team code quality and test coverage by 25%.</li>
+              <li>Automated CI/CD pipelines via GitHub Actions and Docker, reducing production deployment duration from 2 hours to 20 minutes.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>React</span><span>NestJS</span><span>Node.js</span><span>TypeScript</span><span>Docker</span><span>AWS ECS</span><span>PostgreSQL</span><span>CI/CD</span>
+            </div>
+          </div>
+
+          <!-- Role 3: Excellarate Software Engineer -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-title-area">
+                <span class="company-badge encora">Foundation</span>
+                <h3 class="role-title">Software Engineer</h3>
+                <h4 class="company-name">Excellarate (acquired by Encora) · Pune, India</h4>
+              </div>
+              <span class="timeline-date font-mono">Nov 2018 – Jun 2021</span>
+            </div>
+            <p class="timeline-lead">
+              Core engineer building REST APIs and interactive React web applications for enterprise clients.
+            </p>
+            <ul class="timeline-duties">
+              <li>Engineered high-throughput Node.js REST APIs with Express, accelerating data synchronization across distributed systems by 30%.</li>
+              <li>Built 50+ reusable, accessible React UI components, standardizing UI/UX and eliminating redundant frontend code across projects.</li>
+              <li>Implemented secure JWT-based authentication, role-based access control (RBAC), and session validation for 10K+ active users.</li>
+              <li>Profiled PostgreSQL queries, optimized composite indexes, and resolved table locks, cutting average query latency from <strong>500ms down to 80ms</strong>.</li>
+              <li>Partnered with cross-functional product owners in Agile sprints, delivering 15+ complex features per quarter with a 95% sprint completion record.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Node.js</span><span>Express</span><span>React</span><span>PostgreSQL</span><span>REST APIs</span><span>JWT</span><span>JavaScript (ES6+)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED ENTERPRISE PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">PORTFOLIO WORK</span>
+          <h2 class="section-title">Featured Enterprise Projects</h2>
+          <p class="section-desc">Key platforms and microservices engineered for scale, reliability, and business impact.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: HCL Commerce Plus -->
+          <div class="project-card">
+            <div class="project-card-top">
+              <span class="project-badge">Enterprise Commerce</span>
+              <span class="project-scale">20+ PBCs • Multi-Tenant</span>
+            </div>
+            <h3 class="project-title">HCL Commerce Plus — Inventory & Promotion PBCs</h3>
+            <p class="project-desc">
+              Modular, multi-tenant microservices platform powering global enterprise retail commerce. Engineered to handle high-concurrency inventory allocation, real-time promotion rule evaluation, and seamless GraphQL schema federation.
+            </p>
+            <div class="project-specs">
+              <div class="spec-row">
+                <span class="spec-label">Architecture:</span>
+                <span class="spec-val">GraphQL Federation + Microservices</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Isolation:</span>
+                <span class="spec-val">PostgreSQL Row-Level Security (RLS)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Event Sync:</span>
+                <span class="spec-val">Debezium CDC + Apache Kafka</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Impact:</span>
+                <span class="spec-val highlight-green">40% Faster API Response Time</span>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span>TypeScript</span><span>PostGraphile v5</span><span>GraphQL Federation</span><span>PostgreSQL RLS</span><span>Kafka</span><span>Graphile Worker</span>
+            </div>
+          </div>
+
+          <!-- Project 2: Centric PLM -->
+          <div class="project-card">
+            <div class="project-card-top">
+              <span class="project-badge">Enterprise SaaS</span>
+              <span class="project-scale">100+ Categories • 10K+ Assets</span>
+            </div>
+            <h3 class="project-title">Centric Software — Enterprise Buying Board</h3>
+            <p class="project-desc">
+              Full-stack Product Lifecycle Management (PLM) platform enabling retail fashion buyers to curate and manage massive product assortments across 100+ categories. Integrated optimized AWS S3 CDN asset pipelines and smart caching.
+            </p>
+            <div class="project-specs">
+              <div class="spec-row">
+                <span class="spec-label">Stack:</span>
+                <span class="spec-val">React, Node.js, PostgreSQL, AWS S3</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Storage:</span>
+                <span class="spec-val">AWS S3 with CDN delivery for 10K+ assets</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Load Optimization:</span>
+                <span class="spec-val">Intelligent lazy loading & Redis caching</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Impact:</span>
+                <span class="spec-val highlight-green">45% Reduction in Page Load Time</span>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span>React</span><span>Node.js</span><span>TypeScript</span><span>PostgreSQL</span><span>AWS S3</span><span>Redis</span>
+            </div>
+          </div>
+
+          <!-- Project 3: Design System -->
+          <div class="project-card">
+            <div class="project-card-top">
+              <span class="project-badge">Frontend Infrastructure</span>
+              <span class="project-scale">50+ Components • 50K+ Users</span>
+            </div>
+            <h3 class="project-title">Enterprise React UI Design System</h3>
+            <p class="project-desc">
+              Comprehensive, accessible component library built in React, TypeScript, and TailwindCSS. Designed to establish UI/UX consistency across multiple client applications, drastically decreasing sprint turnaround times.
+            </p>
+            <div class="project-specs">
+              <div class="spec-row">
+                <span class="spec-label">Components:</span>
+                <span class="spec-val">50+ Modular, WCAG accessible components</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Build Tool:</span>
+                <span class="spec-val">Vite with Tree-Shaking & Rollup</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Testing:</span>
+                <span class="spec-val">Vitest + React Testing Library (90%+ coverage)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Impact:</span>
+                <span class="spec-val highlight-green">40% Reduction in Feature Dev Time</span>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span>React</span><span>TypeScript</span><span>TailwindCSS</span><span>Vite</span><span>Storybook</span><span>Vitest</span>
+            </div>
+          </div>
+
+          <!-- Project 4: High Throughput Event Engine -->
+          <div class="project-card">
+            <div class="project-card-top">
+              <span class="project-badge">Distributed Systems</span>
+              <span class="project-scale">High Concurrency • Real-Time</span>
+            </div>
+            <h3 class="project-title">Async Inventory & Promotion Calculation Engine</h3>
+            <p class="project-desc">
+              High-throughput asynchronous computation pipeline designed to evaluate complex retail discount rules and available-to-promise (ATP) inventory levels without locking transactional databases.
+            </p>
+            <div class="project-specs">
+              <div class="spec-row">
+                <span class="spec-label">Engine:</span>
+                <span class="spec-val">Graphile Worker + Node.js Workers</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Stream:</span>
+                <span class="spec-val">Kafka Consumer Groups for Partitioned Processing</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Monitoring:</span>
+                <span class="spec-val">OpenTelemetry Traces & Prometheus Metrics</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Impact:</span>
+                <span class="spec-val highlight-green">Zero Downtime / Zero Transaction Blockage</span>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span>Node.js</span><span>Apache Kafka</span><span>PostgreSQL</span><span>Graphile Worker</span><span>Docker</span><span>OpenTelemetry</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & CONNECT SECTION -->
+    <section class="section bg-surface" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">LET'S BUILD TOGETHER</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-desc">Open to Senior Software Engineer (L5), Staff Engineer, and Technical Lead opportunities.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card info-card">
+            <h3>Direct Contact Channels</h3>
+            <p>
+              Whether you are looking to discuss full-stack distributed system architectures, explore potential senior engineering roles, or exchange ideas—my inbox is always open.
+            </p>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon">📧</div>
+              <div class="contact-text">
+                <span class="contact-title">Email Address</span>
+                <a href="mailto:irfanshkh52@gmail.com" class="contact-value">irfanshkh52@gmail.com</a>
+              </div>
+              <button class="copy-btn" id="copyEmailBtn" data-email="irfanshkh52@gmail.com" title="Copy Email">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              </button>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon">📱</div>
+              <div class="contact-text">
+                <span class="contact-title">Phone Number</span>
+                <a href="tel:+918999162474" class="contact-value">+91-8999162474</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon">📍</div>
+              <div class="contact-text">
+                <span class="contact-title">Current Location</span>
+                <span class="contact-value">Pune, Maharashtra, India</span>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon">💼</div>
+              <div class="contact-text">
+                <span class="contact-title">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/irfan-shaikh-b85118169/" target="_blank" rel="noopener noreferrer" class="contact-value link-accent">
+                  linkedin.com/in/irfan-shaikh-b85118169 ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="status-box">
+              <span class="status-dot"></span>
+              <div>
+                <strong>Notice Period:</strong> Standard 90 days (Open to buyout / early release assistance if needed).
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Message Form -->
+          <div class="contact-card form-card">
+            <h3>Send a Direct Message</h3>
+            <form id="contactForm" onsubmit="return handleFormSubmit(event)">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="e.g. Satya Nadella / Recruiter">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required placeholder="name@company.com">
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject / Opportunity</label>
+                <input type="text" id="subject" name="subject" required placeholder="Senior Software Engineer (L5) Discussion">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Hi Irfan, I came across your profile and would love to connect regarding..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Send Message via Email</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="footer-brand">&lt;/&gt; Irfan Shaikh</div>
+        <p>Senior Full Stack & Distributed Systems Engineer · Pune, India</p>
+      </div>
+
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top-btn">
+          <span>Back to Top</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Irfan Shaikh. Crafted with precision for high-performance engineering.</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Copied to clipboard!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
