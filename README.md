@@ -2,13 +2,8 @@
 
 A modern, high-performance portfolio website built for **Irfan Shaikh**, Senior Full Stack & Distributed Systems Engineer based in Pune, India.
 
-## 🚀 Live Production URLs
-* 🌟 **Primary Clean Domain:** **[https://irfanshaikh.surge.sh](https://irfanshaikh.surge.sh)**
-* 🔗 **Alternative Domain:** **[https://irfan-shaikh-portfolio.surge.sh](https://irfan-shaikh-portfolio.surge.sh)**
-
-📖 Guides:
-- **[CUSTOM-DOMAIN-GUIDE.md](./CUSTOM-DOMAIN-GUIDE.md)** — Step-by-step instructions to connect a custom domain (e.g. `irfanshaikh.dev`).
-- **[PORTFOLIO-ARCHITECTURE-AND-DEPLOYMENT.md](./PORTFOLIO-ARCHITECTURE-AND-DEPLOYMENT.md)** — Architecture breakdown and multi-cloud deployment guide.
+## 🚀 Live Preview
+The portfolio is deployed live and can also be run locally on any system.
 
 ## 🛠️ Tech Stack
 - **HTML5 & Modern CSS3** with CSS Variables & Glassmorphism design system
@@ -17,24 +12,26 @@ A modern, high-performance portfolio website built for **Irfan Shaikh**, Senior 
 - **Responsive Architecture:** Fully optimized across mobile, tablet, and widescreen desktop
 
 ## 💻 Running Locally
-You can preview the portfolio locally:
+You can run the portfolio locally using Python or Node:
 
 ```bash
-# Navigate to directory
+# Using Python 3
 cd /Users/irfanshaikh/Downloads/interview-prep/portfolio
-
-# Start a local web server (Python 3)
 python3 -m http.server 3000
 
-# Open http://localhost:3000 in your browser
+# Then open http://localhost:3000 in your browser
 ```
 
-## 🌐 Deploying Updates
-To deploy your latest updates to the live site in one command:
+Or using Node:
 ```bash
-cd /Users/irfanshaikh/Downloads/interview-prep/portfolio
-npx surge . irfanshaikh.surge.sh
+python3 -m http.server 3000
 ```
 
-Alternative deployment guides (Vercel, Netlify, GitHub Pages) are available in `PORTFOLIO-ARCHITECTURE-AND-DEPLOYMENT.md`.
+## 🌐 Deploying
+The site is static and can be deployed in seconds to:
+- **Surge.sh:** `npx surge . --domain irfan-shaikh.surge.sh`
+- **Vercel:** `npx vercel --prod`
+- **Netlify:** `npx netlify deploy --prod --dir=.`
+- **GitHub Pages:** Push to repository and enable GitHub Pages on `main` branch.
 
+`
