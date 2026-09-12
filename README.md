@@ -2,36 +2,54 @@
 
 A modern, high-performance portfolio website built for **Irfan Shaikh**, Senior Full Stack & Distributed Systems Engineer based in Pune, India.
 
-## 🚀 Live Preview
-The portfolio is deployed live and can also be run locally on any system.
+## 🚀 Live Production URLs
+* 🌟 **Primary Live Domain:** **[https://irfanshaikh.surge.sh](https://irfanshaikh.surge.sh)**
+* 🔗 **Alternative Domain:** **[https://irfan-shaikh-portfolio.surge.sh](https://irfan-shaikh-portfolio.surge.sh)**
+
+---
+
+## 📖 Guides & Documentation
+* 🐙 **[GITHUB-PAGES-DEPLOYMENT-GUIDE.md](./GITHUB-PAGES-DEPLOYMENT-GUIDE.md)** — Step-by-step guide to deploy for free on GitHub Pages (`username.github.io`).
+* 🌐 **[CUSTOM-DOMAIN-GUIDE.md](./CUSTOM-DOMAIN-GUIDE.md)** — How to connect your own domain (e.g. `irfanshaikh.dev` / `irfanshaikh.in`).
+* 🏗️ **[PORTFOLIO-ARCHITECTURE-AND-DEPLOYMENT.md](./PORTFOLIO-ARCHITECTURE-AND-DEPLOYMENT.md)** — Complete architecture decisions, performance benchmarks, and multi-cloud deployment guide.
+
+---
 
 ## 🛠️ Tech Stack
 - **HTML5 & Modern CSS3** with CSS Variables & Glassmorphism design system
 - **Vanilla JavaScript (ES6+)** for fast, zero-dependency interactivity
 - **Google Fonts:** Inter & JetBrains Mono
+- **CI/CD:** GitHub Actions workflow pre-configured (`.github/workflows/deploy-pages.yml`)
 - **Responsive Architecture:** Fully optimized across mobile, tablet, and widescreen desktop
 
+---
+
 ## 💻 Running Locally
-You can run the portfolio locally using Python or Node:
+You can preview the portfolio locally:
 
 ```bash
-# Using Python 3
+# Navigate to directory
 cd /Users/irfanshaikh/Downloads/interview-prep/portfolio
+
+# Start a local web server (Python 3)
 python3 -m http.server 3000
 
-# Then open http://localhost:3000 in your browser
+# Open http://localhost:3000 in your browser
 ```
 
-Or using Node:
+---
+
+## 🌐 Deploying Updates
+
+### Option 1: To Surge (Live in 3 seconds)
 ```bash
-python3 -m http.server 3000
+cd /Users/irfanshaikh/Downloads/interview-prep/portfolio
+npx surge . irfanshaikh.surge.sh
 ```
 
-## 🌐 Deploying
-The site is static and can be deployed in seconds to:
-- **Surge.sh:** `npx surge . --domain irfan-shaikh.surge.sh`
-- **Vercel:** `npx vercel --prod`
-- **Netlify:** `npx netlify deploy --prod --dir=.`
-- **GitHub Pages:** Push to repository and enable GitHub Pages on `main` branch.
-
-`
+### Option 2: To GitHub Pages
+```bash
+cd /Users/irfanshaikh/Downloads/interview-prep/portfolio
+./deploy-github.sh
+```
+*(Or standard `git add . && git commit -m "update" && git push`)*
